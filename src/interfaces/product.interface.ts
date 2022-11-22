@@ -1,13 +1,21 @@
 interface IProductRequest {
-  produto: string,
-  valor: number,
-  descricao: string,
-  created?: Date,
-  updated?: Date,
+  produto: string;
+  valor: number;
+  descricao: string;
+  created?: Date;
+  updated?: Date;
 }
 
-interface IProductResponse extends IProductRequest{
-    id:string
+interface IProductResponse extends IProductRequest {
+  id: string;
 }
 
-export {IProductRequest, IProductResponse}
+interface IProductPatchRequest {
+  produto?: string;
+  valor?: number;
+  descricao?: string;
+  created?: Date;
+  updated?: Date;
+}
+
+export { IProductRequest, IProductResponse, IProductPatchRequest };

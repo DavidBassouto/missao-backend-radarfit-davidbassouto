@@ -1,9 +1,9 @@
 interface IProductRequest {
   produto: string,
   valor: number,
-  descricao: Text,
-  created: Date,
-  updated: Date,
+  descricao: string,
+  created?: Date,
+  updated?: Date,
 }
 
 interface IProductResponse extends IProductRequest{

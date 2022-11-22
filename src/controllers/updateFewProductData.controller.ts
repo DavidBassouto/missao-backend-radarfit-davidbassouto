@@ -12,6 +12,6 @@ export const updateFewProductDataController = async (
   const editedProduct = await updateFewProductDataService(newData, productId);
   return res.status(200).json({
     message: "Product Updated",
-    user: editedProduct,
+    product: editedProduct,
   });
 };

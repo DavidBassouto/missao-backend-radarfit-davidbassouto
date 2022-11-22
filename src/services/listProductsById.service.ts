@@ -8,6 +8,7 @@ export const listProductByIdService = async (id: string): Promise<Product> => {
   const productFinded = await productRepository.findOneBy({
     id: id,
   });
+  console.log(productFinded)
   if (!productFinded) {
     throw new AppError("Product not found", 404);
   }

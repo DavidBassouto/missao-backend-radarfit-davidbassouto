@@ -1,12 +1,13 @@
 import { Request, Response } from "express";
-import Product from "../entities/products.entity";
 import { listProductByIdService } from "../services/listProductsById.service";
 
-export const listProductsByIdController= async(req:Request, res: Response)=>{
-    const {id}= req.params
+export const listProductsByIdController = async (
+  req: Request,
+  res: Response
+) => {
+  const { productId } = req.params;
 
-    const productFind= await listProductByIdService(id)
+  const productFind = await listProductByIdService(productId);
 
-    return res.json(productFind)
-
-}
+  return res.json(productFind);
+};

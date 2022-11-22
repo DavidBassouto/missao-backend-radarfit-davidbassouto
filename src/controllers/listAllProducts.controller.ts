@@ -1,6 +1,4 @@
 import { Request, Response } from "express";
-import { IProductRequest } from "../interfaces/product.interface";
-import { createProductService } from "../services/createProduct.service";
 import { listAllProductsService } from "../services/listAllProducts.service";
 
 export const listAllProductsController= async(req:Request, res:Response)=>{

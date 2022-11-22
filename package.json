@@ -1,0 +1,11 @@
+{
+  "name": "missao-backend-radarfit-davidbassouto",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:DavidBassouto/missao-backend-radarfit-davidbassouto.git",
+  "author": "DavidBassouto <davidbassouto@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  }
+}
